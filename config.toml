@@ -6,7 +6,10 @@ build-mindetach-module = false
 # see https://github.com/j-hc/revanced-magisk-module/blob/main/CONFIG.md for more detailed explanations
 
 [YouTube]
-build-mode = "both"                                                   # 'both', 'apk' or 'module'
+app-name = "Youtube Vanced+" # if set, release name becomes SomeApp instead of Some-App. default is same as table name, which is 'Some-App' here.
+enabled = true # whether to build the app. default: true
+
+build-mode = "apk"                                                   # 'both', 'apk' or 'module'
 excluded-patches = "enable-debugging"                                 # space-seperated patches to exclude (multiline strings are not supported)
 included-patches = ""                                                 # space-seperated patches to include (non-excluded patches are included by default)
 version = "auto"                                                      # 'auto', 'latest', 'beta' or a custom one like '17.40.41'
@@ -15,6 +18,7 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube/"
 module-prop-name = "yt-rv"
 
 [Music]
+enabled = false # whether to build the app. default: true
 build-mode = "both"
 app-name = "YouTube-Music"
 excluded-patches = ""
